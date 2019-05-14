@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+
+
+    #div1{
+        border: 50px !important;
+        margin: 50px  !important;
+    }
+    .form-check{
+        display: inline-block;
+    }
+    #marrieddiv,#genderdiv{
+        margin: 5px;
+        display: inline-block;
+        background-color: rgb(76, 173, 238);
+        padding: 5px;
+    }
+    #headingdiv{
+        margin: 5px;
+        background-color: rgb(76, 173, 238);
+        padding: 50px;
+        text-align: center;
+
+    }
+    table,tr,th{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 10px;
+        }
+        #div4{
+            padding: 30px;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div id="headingdiv">
+        <h1 id="heading">Customer Registration Form </h1>
+    </div>
+
+    <div id="div1">
+
+        <form>
+
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter first name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Last Name</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="last name">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Birth Day</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="birthday">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Address</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="address">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Contact Number</label>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="contact number">
+            </div>
+            <div id="marrieddiv">Married Status :
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Married"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Married
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Single"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Single
+                    </label>
+                </div>
+            </div>
+            <div id="genderdiv"> Gender :
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Male"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Female"
+                        checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Female
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">attact your photo</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+            </div>
+            <input class="btn btn-primary" type="button" value="Save Customer">
+
+    </div>
+    
+
+    <div id="div4">
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Address</th>
+                    <th>Contact No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>C001</th>
+                    <th>kasun</th>
+                    <th>Galle</th>
+                    <th>077324344</th>
+                </tr>
+                <tr>
+                    <th>C002</th>
+                    <th>namal</th>
+                    <th>ambalangoda</th>
+                    <th>071344343</th>
+                </tr>
+                <tr>
+                    <th>C003</th>
+                    <th>kawindu</th>
+                    <th>maharagama</th>
+                    <th>07724212</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    </form>
+
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>
